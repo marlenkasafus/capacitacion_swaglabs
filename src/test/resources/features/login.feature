@@ -6,5 +6,5 @@ Feature: Inicio de sesión
 
   Scenario: login exitoso
     Given que el usuario quiere ingresar al sitio web
-    When ingresa su usuario standard_user y su password secret_sauce
+    When ingresa su usuario "standard_user" y su password "secret_sauce"
     Then puede ver los products disponibles
