@@ -10,5 +10,5 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = "src/test/resources/features/",
         glue = "steps",
         snippets = SnippetType.CAMELCASE)
-public class InicioSesionRunner {
+public class LoginRunner {
 }

@@ -19,22 +19,22 @@ public class LoginSteps {
     private LoginPage loginPage;
 
     @Before
-    public void configuracionInicial() {
+    public void setUp() {
         actor.can(BrowseTheWeb.with(hisDriver));
     }
-
-    @Given("^que el usuario quiere ingresar al sitio web$")
-    public void queElUsuarioQuiereIngresarAlSitioWeb() {
+    @Given("^that the user wants to enter the website$")
+    public void thatTheUserWantsToEnterTheWebsite() {
         actor.wasAbleTo(Open.browserOn(loginPage));
     }
 
-
-    @When("^ingresa su usuario \"(.*)\" y su password \"(.*)\"$")
-    public void ingresaSuUsuarioYSuPassword(String user, String password) {
-        actor.attemptsTo(Login.with(user, password));
+    @When("^he enters his username \"(.*)\" and his password \"(.*)\"$")
+    public void heEntersHisUsernameAndHisPassword(String username, String password) {
+        actor.attemptsTo(Login.with(username, password));
     }
 
-    @Then("^puede ver los products disponibles$")
-    public void puedeVerLosProductsDisponibles() {
+    @Then("^he can see \"(.*)\" on the main screen$")
+    public void heCanSeeOnTheMainScreen(String title) {
+
     }
+
 }
