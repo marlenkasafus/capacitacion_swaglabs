@@ -1,10 +1,10 @@
-Feature: Inicio de sesión
-  Como usuario de swaglabs
-  Quiero iniciar sesión con usuario y password
-  Para ingresar al sitio web.
+Feature: Login
+  As a swaglabs user
+  I want to log in with username and password
+  So that enter the website
 
 
-  Scenario: login exitoso
-    Given que el usuario quiere ingresar al sitio web
-    When ingresa su usuario "standard_user" y su password "secret_sauce"
-    Then puede ver los products disponibles
+  Scenario: successful login
+    Given that the user wants to enter the website
+    When he enters his username "standard_user" and his password "secret_sauce"
+    Then he can see "PRODUCTS" on the main screen
