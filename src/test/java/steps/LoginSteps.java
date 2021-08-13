@@ -40,5 +40,4 @@ public class LoginSteps {
     public void heCanSeeOnTheMainScreen(String title) {
         actor.should(seeThat(HomePageQuestion.getTitle(), Matchers.equalTo(title)));
     }
-
 }
